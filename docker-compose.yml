@@ -1,0 +1,15 @@
+version: "3"
+services:
+  printer-test:
+    image: commojun/printer-test:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      CRONTAB_FILE: /crontab
+      PRINTER_URI: ${PRINTER_URI}
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
