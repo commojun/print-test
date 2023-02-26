@@ -10,5 +10,3 @@ RUN apt-get update && \
 COPY ./run.sh /run.sh
 # 専用イメージなのでこれらも埋め込む
 COPY ./crontab /crontab
-COPY ./print.sh /print.sh
-
