@@ -3,7 +3,7 @@ FROM commojun/cron:latest
 
 # cups をインストール
 RUN apt-get update && \
-    apt-get install cups && \
+    apt-get install -y cups && \
     apt-get clean
 
 # run.sh は専用のもので置き換える

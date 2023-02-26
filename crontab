@@ -2,5 +2,7 @@ TZ=Asia/Tokyo
 SHELL=/bin/bash
 
 # 土曜日の朝9時
-*/5 * * * * lp -d printer /run.sh > /proc/1/fd/1 2>&1
 0 9 * * 6 lp -d printer /run.sh > /proc/1/fd/1 2>&1
+
+# 徹すと
+*/5 * * * * lp -d printer /run.sh > /proc/1/fd/1 2>&1
