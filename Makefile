@@ -1,4 +1,4 @@
-refresh: down up
+refresh: down build up
 
 up:
 	docker compose up -d
